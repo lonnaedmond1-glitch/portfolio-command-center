@@ -1,0 +1,6 @@
+{
+  "name": "Sunbelt Sports Operations Dashboard",
+  "description": "Production-grade operational dashboard for Sunbelt Sports, featuring KPI strips, portfolio health tracking, L10 scorecard band, sales, fleet, and schedule management views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
