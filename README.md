@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Field Operations Scorecard
 
-# Run and deploy your AI Studio app
+**[Live demo →](https://portfolio-command-center-orpin.vercel.app/)** · part of [lonnaedmond.com](https://lonnaedmond.com)
 
-This contains everything you need to run your app locally.
+An operations dashboard that scores every active job on health so the worst problems surface first. Built for the question leadership actually asks: *"how are the jobs doing?"* — answered at a glance instead of in a meeting.
 
-View your app in AI Studio: https://ai.studio/apps/0178422b-ba44-4657-9f3e-5d0ade18e471
+## What it does
 
-## Run Locally
+- Rules-based health scoring across every active job: margin trend, schedule position, field-report freshness, AR aging
+- Exception-first layout — at-risk jobs surface before healthy ones
+- Persona walkthroughs (Ops Lead / CFO / Executive) showing the reasoning behind the design
+- Fleet, compliance, sales pipeline, and weekly scorecard views in one place
 
-**Prerequisites:**  Node.js
+## Stack
 
+React / Next.js, deployed on Vercel. The demo runs on synthetic data; the production version of this architecture runs against a live operational data layer and is private.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Status
+
+Active development: this project is being upgraded with an AI diagnosis layer — LLM tool-calling against [ai-tooling](https://github.com/LonnaEdmond/ai-tooling) (an MCP server with 31 typed tool contracts), with structured diagnosis outputs and an evaluation suite. Follow the build in `BUILDLOG.md` as it lands.
